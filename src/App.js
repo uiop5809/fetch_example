@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <TestMocking />
       <Counter />
-      <Counter2 />
     </div>
   );
 }
