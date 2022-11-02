@@ -1,13 +1,17 @@
 import "./App.css";
-import TestMocking from "./components/TestMocking";
-import Counter from "./features/counter/Counter";
-import Counter2 from "./components/Counter2";
+import { RecoilRoot } from "recoil";
+import FontButton from "./components/RecoilExample/FontButton";
+import Text from "./components/RecoilExample/Text";
+import CharacterCounter from "./components/RecoilExample/CharacterCounter.jsx";
 
 function App() {
   return (
     <div className="App">
-      <TestMocking />
-      <Counter />
+      <RecoilRoot>
+        <FontButton />
+        <Text />
+        <CharacterCounter />
+      </RecoilRoot>
     </div>
   );
 }
